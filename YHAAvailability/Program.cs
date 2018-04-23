@@ -14,9 +14,12 @@ namespace YHAAvailability
 	{
 		static void Main( string[] args )
 		{
-			MonthRequest[] monthRequests = { new MonthRequest( "032018", "Mar" ), new MonthRequest( "042018", "Apr" ), new MonthRequest( "052018", "May" ),
-				new MonthRequest( "062018", "Jun" ), new MonthRequest( "072018", "Jly" ), new MonthRequest( "082018", "Aug" ), new MonthRequest( "092018", "Sep" ),
-				new MonthRequest( "102018", "Oct" ) };
+//			MonthRequest[] monthRequests = { new MonthRequest( "032018", "Mar" ), new MonthRequest( "042018", "Apr" ), new MonthRequest( "052018", "May" ),
+//				new MonthRequest( "062018", "Jun" ), new MonthRequest( "072018", "Jly" ), new MonthRequest( "082018", "Aug" ), new MonthRequest( "092018", "Sep" ),
+//				new MonthRequest( "102018", "Oct" ) };
+
+			MonthRequest[] monthRequests = { new MonthRequest( "052018", "May" ), new MonthRequest( "062018", "Jun" ), new MonthRequest( "072018", "Jly" ),
+				new MonthRequest( "082018", "Aug" ), new MonthRequest( "092018", "Sep" ), new MonthRequest( "102018", "Oct" ) };
 
 			List<HostelGroup> groups = new List<HostelGroup>();
 
