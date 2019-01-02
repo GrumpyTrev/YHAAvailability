@@ -14,11 +14,9 @@ namespace YHAAvailability
 	{
 		static void Main( string[] args )
 		{
-//			MonthRequest[] monthRequests = { new MonthRequest( "2018-05-01", "May" ), new MonthRequest( "2018-06-01", "Jun" ),
-//				new MonthRequest( "2018-07-01", "Jly" ), new MonthRequest( "2018-08-01", "Aug" ), new MonthRequest( "2018-09-01", "Sep" ),
-//				new MonthRequest( "2018-10-01", "Oct" ) };
-
-			MonthRequest[] monthRequests = { new MonthRequest( "2018-09-01", "Sep" ), new MonthRequest( "2018-10-01", "Oct" ) };
+			MonthRequest[] monthRequests = { new MonthRequest( "2019-03-01", "Mar" ), new MonthRequest( "2019-04-01", "Apr" ),
+				new MonthRequest( "2019-05-01", "May" ), new MonthRequest( "2019-06-01", "Jun" ), new MonthRequest( "2019-07-01", "Jly" ),
+				new MonthRequest( "2019-08-01", "Aug" ), new MonthRequest( "2019-09-01", "Sep" ), new MonthRequest( "2019-10-01", "Oct" ) };
 
 			List<HostelGroup> groups = new List<HostelGroup> {
 				new HostelGroup( "Peak District" ).AddHostel( new Hostel( "Ilam Hall", 118 ), new Hostel( "Hartington Hall", 104 ),
@@ -117,13 +115,13 @@ namespace YHAAvailability
 					if ( availabilities != null )
 					{
 						availability.AddAvailability( 
-							string.Format( "{0}, {1} {2}, 2018", fullDate.DayOfWeek.ToString().Substring( 0, 3 ), fullDate.ToString( "MMM" ), fullDate.Day ), 
+							string.Format( "{0}, {1} {2}, 2019", fullDate.DayOfWeek.ToString().Substring( 0, 3 ), fullDate.ToString( "MMM" ), fullDate.Day ), 
 							( availabilities[ index ].Length > 6 ) && ( availabilities[ index ][ 0 ] == '&' ), hostelCount );
 					}
 					else
 					{
 						availability.AddAvailability(
-							string.Format( "{0}, {1} {2}, 2018", fullDate.DayOfWeek.ToString().Substring( 0, 3 ), fullDate.ToString( "MMM" ), fullDate.Day ), false, hostelCount );
+							string.Format( "{0}, {1} {2}, 2019", fullDate.DayOfWeek.ToString().Substring( 0, 3 ), fullDate.ToString( "MMM" ), fullDate.Day ), false, hostelCount );
 					}
 				}
 
